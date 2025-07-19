@@ -21,6 +21,7 @@ sdist/
 var/
 wheels/
 *.egg-info/
+src/crypto_backtest.egg-info/
 .installed.cfg
 *.egg
 

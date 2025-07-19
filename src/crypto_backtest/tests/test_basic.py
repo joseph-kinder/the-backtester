@@ -13,7 +13,7 @@ from crypto_backtest.features import sma, rsi, zscore
 
 def create_dummy_data(symbol='BTC/USDT', days=30):
     """Create dummy OHLCV data for testing"""
-    dates = pd.date_range(end=datetime.now(), periods=days*24, freq='H')
+    dates = pd.date_range(end=datetime.now(), periods=days*24, freq='h')
     
     # Generate random walk price data
     np.random.seed(42)
@@ -23,7 +23,7 @@ def create_dummy_data(symbol='BTC/USDT', days=30):
     # Generate OHLCV
     high = close * (1 + np.abs(np.random.normal(0, 0.005, size=len(dates))))
     low = close * (1 - np.abs(np.random.normal(0, 0.005, size=len(dates))))
-    open_ = close.shift(1).fillna(close[0])
+    open_ = pd.Series(close).shift(1).fillna(close[0]).values
     volume = np.random.uniform(100, 1000, size=len(dates))
     
     df = pd.DataFrame({

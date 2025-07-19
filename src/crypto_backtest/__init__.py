@@ -6,7 +6,6 @@ __version__ = "0.1.0"
 
 # Import main API functions
 from .api.backtest import run_backtest
-from .data.loaders import load_data, load_orderbook_snapshots, load_trades
 from .optimization.optimize import optimize_strategy, walk_forward_analysis
 
 # Import all feature functions for easy access
@@ -38,9 +37,6 @@ config = Config()
 # Expose main functions at package level
 __all__ = [
     'run_backtest',
-    'load_data',
-    'load_orderbook_snapshots',
-    'load_trades',
     'optimize_strategy',
     'walk_forward_analysis',
     'config'
