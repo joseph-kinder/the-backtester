@@ -3,40 +3,24 @@ numpy>=1.21.0
 pandas>=1.3.0
 scipy>=1.7.0
 numba>=0.54.0
-
-# Statistical analysis
 statsmodels>=0.13.0
-
-# Exchange connectivity
 ccxt>=4.0.0
-
-# Plotting and visualization
 plotly>=5.0.0
-matplotlib>=3.4.0
-
-# Machine learning support
-onnxruntime>=1.12.0
+nbformat>=4.2.0
 scikit-learn>=1.0.0
-
-# Optimization
 optuna>=3.0.0
-
-# Data handling
-pyarrow>=9.0.0
-h5py>=3.0.0
-
-# Progress bars and utilities
 tqdm>=4.62.0
 click>=8.0.0
 
-# Testing
+# Optional dependencies (now standard)
+matplotlib>=3.4.0
+onnxruntime>=1.12.0
+pyarrow>=9.0.0
+h5py>=3.0.0
+
+# Development dependencies
 pytest>=7.0.0
 pytest-cov>=3.0.0
-
-# Development
 black>=22.0.0
 flake8>=4.0.0
 mypy>=0.950
-
-# Optional technical analysis library
-# ta-lib>=0.4.25  # Requires C++ build tools on Windows
