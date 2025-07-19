@@ -14,11 +14,13 @@ A comprehensive Python toolkit for backtesting cryptocurrency trading strategies
 
 ## Installation
 
-### Quick Start (Recommended for Python 3.12)
+See [INSTALL.md](INSTALL.md) for detailed installation instructions.
+
+### Quick Start
 
 ```bash
-# Install minimal requirements
-pip install -r requirements-minimal.txt
+# Install requirements
+pip install -r requirements.txt
 
 # Install the package in development mode
 pip install -e .
@@ -26,13 +28,6 @@ pip install -e .
 # Test the installation
 python test_installation.py
 ```
-
-### Full Installation
-
-See [INSTALL.md](INSTALL.md) for detailed installation instructions including:
-- Windows-specific TA-Lib installation
-- Conda environment setup
-- Troubleshooting guide
 
 ## Quick Start
 
